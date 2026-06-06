@@ -21,7 +21,7 @@ const About: FC = () => {
             empresas de grande porte.
           </p>
           <p>
-            Minha stack principal inclui React, Node.js, TypeScript e PostgreSQL.
+            Minha stack principal inclui Java, Springboot,  Node.js, React, TypeScript.
             Gosto de transformar ideias em produtos reais, do prot&oacute;tipo
             ao deploy.
           </p>
