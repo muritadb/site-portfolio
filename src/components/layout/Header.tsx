@@ -7,7 +7,7 @@ import {
 import { useState, type FC } from "react"
 import type { NavLink } from "@/types"
 import { Button } from "@/components/ui/button"
-import { useTheme } from "next-themes"
+import { useTheme } from "@/components/theme-provider"
 
 const navLinks: NavLink[] = [
   { label: "Sobre", href: "#about" },
@@ -40,6 +40,7 @@ const Header: FC = () => {
           <Button
             variant="ghost"
             size="icon"
+            className="relative"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             <Sun className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -52,6 +53,7 @@ const Header: FC = () => {
           <Button
             variant="ghost"
             size="icon"
+            className="relative"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             <Sun className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
