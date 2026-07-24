@@ -10,6 +10,7 @@ import {
   Container,
   Cloud,
   Terminal,
+  Workflow
 } from "lucide-react"
 
 const skills = [
@@ -24,6 +25,7 @@ const skills = [
   { name: "AWS", category: "tools" as const, icon: Cloud },
   { name: "Git", category: "tools" as const, icon: GitBranch },
   { name: "Linux", category: "tools" as const, icon: Terminal },
+  { name: "N8N", category: "tools" as const, icon: Workflow },
   { name: "GraphQL", category: "backend" as const, icon: Server },
 ]
 
