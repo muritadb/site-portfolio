@@ -24,3 +24,11 @@ export interface NavLink {
   label: string
   href: string
 }
+
+export interface MyLink {
+  id: string
+  label: string
+  url: string
+  icon: string
+  description?: string
+}

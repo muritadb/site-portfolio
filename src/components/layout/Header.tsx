@@ -1,10 +1,12 @@
 import {
+  Link2,
   Menu,
   Moon,
   Sun,
   X,
 } from "lucide-react"
 import { useState, type FC } from "react"
+import { Link } from "react-router-dom"
 import type { NavLink } from "@/types"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "@/components/theme-provider"
@@ -37,6 +39,13 @@ const Header: FC = () => {
               {link.label}
             </a>
           ))}
+          <Link
+            to="/mylinks"
+            className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <Link2 className="size-4" />
+            My Links
+          </Link>
           <Button
             variant="ghost"
             size="icon"
@@ -50,6 +59,12 @@ const Header: FC = () => {
         </nav>
 
         <div className="flex items-center gap-2 md:hidden">
+          <Link
+            to="/mylinks"
+            className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <Link2 className="size-4" />
+          </Link>
           <Button
             variant="ghost"
             size="icon"
@@ -79,6 +94,14 @@ const Header: FC = () => {
                 {link.label}
               </a>
             ))}
+            <Link
+              to="/mylinks"
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+            >
+              <Link2 className="size-4" />
+              My Links
+            </Link>
           </nav>
         </div>
       )}
