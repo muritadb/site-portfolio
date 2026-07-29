@@ -1,7 +1,7 @@
 import type { FC } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "@/pages/Home"
-import Mylinks from "@/components/sections/Mylinks"
+import Mylinks from "@/pages/Mylinks"
 
 const App: FC = () => {
   return (
